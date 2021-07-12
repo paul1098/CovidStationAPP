@@ -27,6 +27,7 @@
                 android:id="@+id/MiPerfiltxt"
                 android:text="@string/MiPerfiltxt"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -36,14 +37,15 @@
                 android:src="@drawable/perfil"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_width="150dp"
-                android:layout_height="150dp"/>
+                android:layout_width="130dp"
+                android:layout_height="130dp"/>
 
             //UID
             <TextView
                 android:id="@+id/uid"
                 android:text="@string/uid"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -53,6 +55,7 @@
                 android:id="@+id/correo"
                 android:text="@string/correo"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -62,6 +65,7 @@
                 android:id="@+id/nombre"
                 android:text="@string/nombre"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -71,6 +75,7 @@
                 android:id="@+id/edad"
                 android:text="@string/edad"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -80,6 +85,7 @@
                 android:id="@+id/pais"
                 android:text="@string/pais"
                 android:gravity="center"
+                android:textColor="@color/black"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -95,6 +101,7 @@
             android:text="@string/miPuntuaciónTxt"
             android:textSize="25sp"
             android:gravity="center"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
@@ -109,6 +116,8 @@
             <TextView
                 android:id="@+id/virus"
                 android:text="@string/virus"
+                android:textSize="25sp"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -119,7 +128,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20sp"
-                app:srcCompat="@drawable/splash"
+                app:srcCompat="@drawable/virus"
                 android:layout_marginLeft="20sp" />
 
 
@@ -135,6 +144,7 @@
             android:text="@string/menuTxt"
             android:gravity="center"
             android:textSize="25sp"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
