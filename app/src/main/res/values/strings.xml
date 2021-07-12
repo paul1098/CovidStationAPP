@@ -1,40 +1,49 @@
+
 <resources>
-    <!--ACTIVIDAD PARA INICIAR SESION(MAIN ACTIVITY)-->
-    <string name="app_name">CovidStation</string>
-    <string name="btn_login">Iniciar Sesión</string>
-    <string name="btn_registro">Registrarse</string>
+<!--ACTIVIDAD PARA INICIAR SESION(MAIN ACTIVITY)-->
+<string name="app_name">CovidStation</string>
+<string name="btn_login">Iniciar Sesión</string>
+<string name="btn_registro">Registrarse</string>
 
-    <!--ACTIVIDAD PARA EL REGISTRO-->
-    <string name="nombreET">Nombre</string>
-    <string name="correoET">Correo</string>
-    <string name="contraseñaET">Contraseña</string>
-    <string name="registrar">Registrarse</string>
+<!--ACTIVIDAD PARA EL REGISTRO-->
+<string name="nombreET">Nombre</string>
+<string name="correoET">Correo</string>
+<string name="edadET">Edad</string>
+<string name="paisET">País</string>
+<string name="contraseñaET">Contraseña</string>
+<string name="registrar">Registrarse</string>
 
-    <!--MENÚ-->
-    <string name="miPuntuaciónTxt">Mi Puntuacion</string>
-    <string name="virus"> -- </string>
-    <string name="uid"> -- </string>
-    <string name="correo"> -- </string>
-    <string name="nombre"> -- </string>
-    <string name="fecha"> -- </string>
+<!--MENÚ-->
+<string name="MiPerfiltxt">Mi Perfil</string>
+<string name="miPuntuaciónTxt">Mi Puntuacion</string>
+<string name="virus"> -- </string>
+<string name="uid"> -- </string>
+<string name="correo"> -- </string>
+<string name="nombre"> -- </string>
+<string name="edad"> -- </string>
+<string name="pais"> -- </string>
+<string name="fecha"> -- </string>
 
-    <string name="menuTxt">Menu</string>
+<string name="menuTxt">Menu</string>
 
-    <string name="jugarBtn">Jugar</string>
-    <string name="puntuacionesBtn">Puntuaciones</string>
-    <string name="acercaDeBtn">Acerca de</string>
-    <string name="CerrarSesion">Cerrar Sesión</string>
+<string name="jugarBtn">Jugar</string>
+<string name="EditarBtn">Editar</string>
+<string name="CambiarPassBtn">Cambiar Contraseña</string>
+<string name="puntuacionesBtn">Puntuaciones</string>
+<string name="acercaDeBtn">Acerca de</string>
+<string name="CerrarSesion">Cerrar Sesión</string>
 
-    <!--ESCENARIO-->
-    <string name="TvContador"> 0 </string>
-    <string name="TvNombre"> --- </string>
-    <string name="TvTiempo"> 0s </string>
+<!--ESCENARIO-->
+<string name="TvContador"> 0 </string>
+<string name="TvNombre"> --- </string>
+<string name="TvTiempo"> 0s </string>
 
-    <!--GAMEOVER-->
-    <string name="SeacaboTXT">!Se acabo el tiempo¡</string>
-    <string name="HasmatadoTXT">Has matado</string>
-    <string name="NumeroTXT"> -- </string>
-    <string name="JUGARDENUEVO">JUGAR DE NUEVO</string>
-    <string name="IRMENU">MENU</string>
-    <string name="PUNTAJES">VER PUNTAJES</string>
+<!--GAMEOVER-->
+<string name="SeacaboTXT">!Se acabo el tiempo¡</string>
+<string name="HasmatadoTXT">Has matado</string>
+<string name="NumeroTXT"> -- </string>
+<string name="JUGARDENUEVO">JUGAR DE NUEVO</string>
+<string name="IRMENU">MENU</string>
+<string name="PUNTAJES">VER PUNTAJES</string>
 </resources>
+

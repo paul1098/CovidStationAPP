@@ -27,7 +27,7 @@ import java.util.HashMap;
 public class registro extends AppCompatActivity {
 
     //DECLARACION DE VARIABLES
-    EditText    correoET,contrasenaET,nombreET;
+    EditText    correoET,contrasenaET,nombreET,edadET,paisET;
     Button      btnRegistrar;
     TextView    textRegistro;
 
@@ -41,6 +41,8 @@ public class registro extends AppCompatActivity {
 
         //CONEXION CON LA VISTA
         nombreET = findViewById(R.id.nombreET);
+        edadET = findViewById(R.id.edadET);
+        paisET = findViewById(R.id.paisET);
         correoET = findViewById(R.id.correoET);
         contrasenaET = findViewById(R.id.contrasenaET);
         btnRegistrar = findViewById(R.id.btn_registrar);
@@ -53,39 +55,39 @@ public class registro extends AppCompatActivity {
         dialog.setCancelable(false);
 
 
-         btnRegistrar.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-                 String userCorreo = correoET.getText().toString();
-                 String userContrasena = contrasenaET.getText().toString();
+                String userCorreo = correoET.getText().toString();
+                String userContrasena = contrasenaET.getText().toString();
 
-                 //VALIDACION PARA CORREO
-                 if (!Patterns.EMAIL_ADDRESS.matcher(userCorreo).matches()){
+                //VALIDACION PARA CORREO
+                if (!Patterns.EMAIL_ADDRESS.matcher(userCorreo).matches()){
 
                     correoET.setError("Correo no valido");
                     correoET.setFocusable(true);
 
                     //VALIDACION PARA CONTRASEÑA
-                 } else if(userContrasena.length()<6){
-                     contrasenaET.setError("La contraseña debe tener mas de 6 caracteres");
-                     contrasenaET.setFocusable(true);
-                 } else {
-                     RegistrarJugador(userCorreo,userContrasena);
-                 }
-             }
-         });
+                } else if(userContrasena.length()<6){
+                    contrasenaET.setError("La contraseña debe tener mas de 6 caracteres");
+                    contrasenaET.setFocusable(true);
+                } else {
+                    RegistrarJugador(userCorreo,userContrasena);
+                }
+            }
+        });
 
 
-         textRegistro = findViewById(R.id.textRegistro);
+        textRegistro = findViewById(R.id.textRegistro);
         textRegistro.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
+            @Override
+            public void onClick(View v) {
 
-                 startActivity(new Intent(registro.this, MainActivity.class));
-                    finish();
-             }
-         });
+                startActivity(new Intent(registro.this, MainActivity.class));
+                finish();
+            }
+        });
 
 
     }
@@ -106,11 +108,15 @@ public class registro extends AppCompatActivity {
                             String correoString = correoET.getText().toString();
                             String contrasenaString = contrasenaET.getText().toString();
                             String nombreString = nombreET.getText().toString();
-
+                            String edadString = edadET.getText().toString();
+                            String paisString = paisET.getText().toString();
                             HashMap<Object,Object> DatosJugador = new HashMap<>();
 
                             DatosJugador.put("Uid",uidString);
                             DatosJugador.put("Nombre",nombreString);
+                            DatosJugador.put("Edad",edadString);
+                            DatosJugador.put("País",paisString);
+                            DatosJugador.put("Imagen","");
                             DatosJugador.put("Correo",correoString);
                             DatosJugador.put("Contraseña",contrasenaString);
                             DatosJugador.put("Kills",contador);
@@ -128,11 +134,11 @@ public class registro extends AppCompatActivity {
                 })
                 //SI FALLA EL REGISTRO SE EJECUTA ESTO
                 .addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(registro.this,""+e.getMessage(),Toast.LENGTH_SHORT).show();
-            }
-        });
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(registro.this,""+e.getMessage(),Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 
 

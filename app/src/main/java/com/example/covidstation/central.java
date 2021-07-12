@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,11 +23,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class central extends AppCompatActivity {
 
-    Button      jugarBtn,puntuacionesBtn,acercaDeBtn,CerrarSesion;
-    TextView    miPuntuaciónTxt,virus,uid,correo,nombre,menuTxt;
+    Button      jugarBtn,editarBtn,CambiarPassBtn,puntuacionesBtn,acercaDeBtn,CerrarSesion;
+    TextView    miPuntuaciónTxt,virus,uid,correo,nombre,edad,pais,menuTxt;
+    CircleImageView imagenPerfil;
 
     FirebaseAuth  auth;
     FirebaseUser user;
@@ -47,15 +52,23 @@ public class central extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         JUGADORES = firebaseDatabase.getReference(  "Jugadores");
-
         miPuntuaciónTxt = findViewById( R.id.miPuntuaciónTxt);
+
+        //PERFIL
+        imagenPerfil = findViewById(R.id.imagenPerfil);
         virus = findViewById(R.id.virus);
         uid = findViewById( R.id.uid);
         correo = findViewById( R.id.correo);
         nombre = findViewById( R.id.nombre);
+        edad = findViewById( R.id.edad);
+        pais = findViewById( R.id.pais);
+
         menuTxt = findViewById( R.id.menuTxt);
 
+        //OPCIONES DEL JUEGO
         jugarBtn = findViewById( R.id.jugarBtn);
+        editarBtn = findViewById(R.id.editarBtn);
+        CambiarPassBtn = findViewById(R.id.CambiarPassBtn);
         puntuacionesBtn = findViewById( R.id.puntuacionesBtn);
         acercaDeBtn = findViewById( R.id.acercaDeBtn);
         CerrarSesion = findViewById( R.id.CerrarSesion);
@@ -79,7 +92,22 @@ public class central extends AppCompatActivity {
                 Toast.makeText(central.this, "ENVIANDO PARAMETROS",Toast.LENGTH_SHORT).show();
             }
         }));
-        
+
+        editarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(central.this,"EDITAR",Toast.LENGTH_SHORT).show();
+            }
+        });
+        CambiarPassBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(central.this,"CAMBIAR CONTRASEÑA", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+
         puntuacionesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,12 +171,26 @@ public class central extends AppCompatActivity {
                     String uidString = ""+ds.child("Uid").getValue();
                     String emailString = ""+ds.child("Correo").getValue();
                     String nombreString = ""+ds.child("Nombre").getValue();
+                    String edadString = ""+ds.child("Edad").getValue();
+                    String paisString = ""+ds.child("País").getValue();
+                    String imagen = ""+ds.child("Imagen").getValue();
+
 
                     /*SETEO DE DATOS EN LOS TXTVIEW*/
                     virus.setText(virusString);
                     uid.setText(uidString);
                     correo.setText(emailString);
                     nombre.setText(nombreString);
+                    edad.setText(edadString);
+                    pais.setText(paisString);
+
+                    try {
+                        Picasso.get().load(imagen).into(imagenPerfil);
+                    }catch (Exception e){
+                        Picasso.get().load(R.drawable.perfil).into(imagenPerfil);
+                    }
+
+
 
                 }
 

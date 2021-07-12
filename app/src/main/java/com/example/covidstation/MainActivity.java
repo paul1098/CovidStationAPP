@@ -21,9 +21,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
-        //declaracion de variables
+    //declaracion de variables
     EditText    login_usuario,login_contrasena;
     Button      btn_login;
 
@@ -80,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
     /*METODO PARA LOGEAR AL JUGADOR*/
     private void LogeoDeJugador(String usercorreo2, String usercontrasena2) {
         auth.signInWithEmailAndPassword(usercorreo2,usercontrasena2)
-               .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                   @Override
-                   public void onComplete(@NonNull Task<AuthResult> task) {
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             FirebaseUser user = auth.getCurrentUser();
                             startActivity(new Intent(MainActivity.this,central.class));
@@ -90,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this,"Bienvenido "+user.getEmail(),Toast.LENGTH_SHORT).show();
                             finish();
                         }
-                   }
-                   //SI FALLA EL LOGEO NOS MUESTRA UN MENSAJE
-               }) .addOnFailureListener(new OnFailureListener() {
+                    }
+                    //SI FALLA EL LOGEO NOS MUESTRA UN MENSAJE
+                }) .addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull  Exception e) {
                 Toast.makeText(MainActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();

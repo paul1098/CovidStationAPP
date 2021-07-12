@@ -38,9 +38,10 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:28.1.0')
     implementation 'com.google.firebase:firebase-database:20.0.0' /*Base de datos*/
     implementation 'com.airbnb.android:lottie:3.0.1' /*Animaciones*/
+    implementation 'com.squareup.picasso:picasso:2.71828' /*GESTIONAR IMAGEN*/
+    implementation 'de.hdodenhof:circleimageview:3.0.1'   /*IMAGEN CIRCULAR*/
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'/*gif*/
-
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
