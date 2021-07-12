@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64ecb4"
+    tools:context=".registro">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--nombre-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nombreET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nombreET"
+                android:inputType="text"
+
+                android:textColorHint="#000000"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="232dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--correo-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/correoET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/correoET"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteY="285dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--contraseña-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/contrasenaET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/contraseñaET"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteY="338dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--boton de registro-->
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:clickable="false"
+            android:text="@string/registrar"
+            tools:layout_editor_absoluteY="399dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes una cuenta?"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="580dp" />
+        <TextView
+            android:id="@+id/textRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:hint="Nombre"
+            android:text="Inicia Sesión"
+            android:textColor="#3F51B5"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="330dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64ecb4"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="226dp"
+            android:layout_height="217dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.118"
+            app:srcCompat="@drawable/main" />
+
+        //Usuario
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/login_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textColorHint="@color/black"
+                tools:layout_editor_absoluteY="338dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        //contraseña
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/login_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_login"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"/>
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:checkable="true"
+            android:clickable="false"
+            android:onClick="irRegistrarse"
+            android:text="@string/btn_registro"
+            android:textColor="#FFFFFF"
+             />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

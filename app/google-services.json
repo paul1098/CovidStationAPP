@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "881859634681",
+    "project_id": "covidstation-f034c",
+    "storage_bucket": "covidstation-f034c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881859634681:android:a8fbb41b5ad2a57b82c928",
+        "android_client_info": {
+          "package_name": "com.example.covidstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881859634681-g8t3kor2sod888t4v7ks9kasa0v2ro9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy2brihkTrXOdhSVHzyTiH4A196RmuCF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881859634681-g8t3kor2sod888t4v7ks9kasa0v2ro9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

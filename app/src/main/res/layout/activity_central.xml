@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64ecb4"
+    tools:context=".central">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        //PUNTUACION
+        <TextView
+            android:id="@+id/miPuntuaciónTxt"
+            android:text="@string/miPuntuaciónTxt"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //VIRUS ELIMINADOS
+        <TextView
+            android:id="@+id/virus"
+            android:text="@string/virus"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //IMAGEN PRINCIPAL
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="258dp"
+            android:layout_height="225dp"
+            app:srcCompat="@drawable/splash" />
+
+        //UID
+        <TextView
+            android:id="@+id/uid"
+            android:text="@string/uid"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //CORREO
+        <TextView
+            android:id="@+id/correo"
+            android:text="@string/correo"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //NOMBRE DE USUARIO
+        <TextView
+            android:id="@+id/nombre"
+            android:text="@string/nombre"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //TXT MENU
+        <TextView
+            android:id="@+id/menuTxt"
+            android:text="@string/menuTxt"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        //BOTON JUGAR
+        <Button
+            android:id="@+id/jugarBtn"
+            android:text="@string/jugarBtn"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        /BOTON PUNTUACIÓN
+        <Button
+            android:id="@+id/puntuacionesBtn"
+            android:text="@string/puntuacionesBtn"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        //BOTON ACERCA DE
+        <Button
+            android:id="@+id/acercaDeBtn"
+            android:text="@string/acercaDeBtn"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        //BOTON SALIR
+        <Button
+            android:id="@+id/CerrarSesion"
+            android:text="@string/CerrarSesion"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/boton_personalizado"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
