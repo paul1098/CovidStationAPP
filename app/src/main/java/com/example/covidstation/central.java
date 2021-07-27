@@ -97,7 +97,7 @@ public class central extends AppCompatActivity {
                 intent.putExtra("VIRUS",VirusS);
 
                 startActivity(intent);
-                Toast.makeText(central.this, "ENVIANDO PARAMETROS",Toast.LENGTH_SHORT).show();
+
             }
         }));
 
@@ -120,7 +120,9 @@ public class central extends AppCompatActivity {
         puntuacionesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(central.this, "PUNTUACIONES", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(central.this,Puntajes.class);
+                startActivity(intent);
+
             }
         });
 

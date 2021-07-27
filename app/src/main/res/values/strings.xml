@@ -39,11 +39,18 @@
 <string name="TvTiempo"> 0s </string>
 
 <!--GAMEOVER-->
-<string name="SeacaboTXT">!Se acabo el tiempo¡</string>
+<string name="SeacaboTXT">No olvides usar mascarilla</string>
 <string name="HasmatadoTXT">Has matado</string>
 <string name="NumeroTXT"> -- </string>
 <string name="JUGARDENUEVO">JUGAR DE NUEVO</string>
 <string name="IRMENU">MENU</string>
 <string name="PUNTAJES">VER PUNTAJES</string>
+<!--DATOS JUGADOR DE LA LISTA-->
+<string name="NombreJugador">Nombres</string>
+    <string name="CorreoJugador">Correo</string>
+    <string name="PuntajeJugador">Puntaje</string>
+
+
+
 </resources>
 
