@@ -6,6 +6,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -46,7 +47,7 @@ public class central extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference JUGADORES;
 
-
+    Dialog dialog;
 
 
     @Override
@@ -59,6 +60,8 @@ public class central extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         JUGADORES = firebaseDatabase.getReference(  "Jugadores");
+
+        dialog = new Dialog(central.this);
 
         miPuntuaciónTxt = findViewById( R.id.miPuntuaciónTxt);
 
@@ -129,7 +132,7 @@ public class central extends AppCompatActivity {
         acercaDeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(central.this, "ACERCA DE", Toast.LENGTH_SHORT).show();
+                AcercaDe();
             }
         });
 
@@ -140,6 +143,25 @@ public class central extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void AcercaDe() {
+
+        TextView DesarrolladoporTXT,DevTXT;
+        Button Ok;
+
+        dialog.setContentView(R.layout.acerca_de);
+        DesarrolladoporTXT = dialog.findViewById(R.id.DesarrolladoporTXT);
+        DevTXT = dialog.findViewById(R.id.DevTXT);
+        Ok = dialog.findViewById(R.id.Ok);
+
+        Ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 
     //METODO PARA EDITAR LOS DATOS

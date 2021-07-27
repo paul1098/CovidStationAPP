@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="400dp"
+        android:layout_height="520dp"
+        android:background="#086A87"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/DesarrolladoporTXT"
+            android:text="@string/DesarrolladoporTXT"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/desarrollador"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/DevTXT"
+            android:text="@string/DevTXT"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/DevTXT1"
+            android:text="@string/DevTXT1"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/DevTXT2"
+            android:text="@string/DevTXT2"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/DevTXT3"
+            android:text="@string/DevTXT3"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/DevTXT4"
+            android:text="@string/DevTXT4"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/Ok"
+            android:text="@string/Ok"
+            android:background="#FE2E64"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

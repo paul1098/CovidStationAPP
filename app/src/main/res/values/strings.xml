@@ -50,6 +50,13 @@
     <string name="CorreoJugador">Correo</string>
     <string name="PuntajeJugador">Puntaje</string>
 
+    <string name="DesarrolladoporTXT">Desarrollado por:</string>
+    <string name="DevTXT">Carbajal Rojas Carlos</string>
+    <string name="DevTXT1">Del Aguila Paul</string>
+    <string name="DevTXT2">Hoyos Reyna Jorge</string>
+    <string name="DevTXT3">Gomez Villavicencio Danitza</string>
+    <string name="DevTXT4">Villacriz Moran Jairo</string>
+    <string name="Ok">Ok</string>
 
 
 </resources>
