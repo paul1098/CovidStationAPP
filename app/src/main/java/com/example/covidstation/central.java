@@ -76,7 +76,7 @@ public class central extends AppCompatActivity {
         //OPCIONES DEL JUEGO
         jugarBtn = findViewById( R.id.jugarBtn);
         editarBtn = findViewById(R.id.editarBtn);
-        CambiarPassBtn = findViewById(R.id.CambiarPassBtn);
+       // CambiarPassBtn = findViewById(R.id.CambiarPassBtn);
         puntuacionesBtn = findViewById( R.id.puntuacionesBtn);
         acercaDeBtn = findViewById( R.id.acercaDeBtn);
         CerrarSesion = findViewById( R.id.CerrarSesion);
@@ -108,12 +108,12 @@ public class central extends AppCompatActivity {
                 EditarDatos();
             }
         });
-        CambiarPassBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(central.this,"CAMBIAR CONTRASEÑA", Toast.LENGTH_SHORT).show();
-            }
-        });
+       // CambiarPassBtn.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+           // public void onClick(View v) {
+                //Toast.makeText(central.this,"CAMBIAR CONTRASEÑA", Toast.LENGTH_SHORT).show();
+            //}
+        //});
 
 
 

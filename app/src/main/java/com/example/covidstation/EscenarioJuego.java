@@ -177,13 +177,15 @@ public class EscenarioJuego extends AppCompatActivity {
                 startActivity(new Intent(EscenarioJuego.this,central.class));
             }
         });
+
         PUNTAJES.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(EscenarioJuego.this, "PUNTAJES", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EscenarioJuego.this,Puntajes.class);
+                startActivity(intent);
+
             }
         });
-
         miDialog.show();
     }
 

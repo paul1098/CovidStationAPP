@@ -175,16 +175,7 @@
 
 
         //BOTON CAMIAR
-        <Button
-            android:id="@+id/CambiarPassBtn"
-            android:text="@string/CambiarPassBtn"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/boton_personalizado"
-            android:fontFamily="sans-serif-black"
-            android:textColor="#FFFFFF"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+
 
 
 
