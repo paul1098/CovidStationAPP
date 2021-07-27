@@ -15,7 +15,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <!-- IMAGEN DE PERFIL -->
-
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/viruspuntaje"/>
         <!-- DATOS DE JUGADOR -->
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
